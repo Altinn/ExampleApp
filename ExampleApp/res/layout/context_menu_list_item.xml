@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="@dimen/menu_padding_hor"
+    android:paddingRight="@dimen/menu_padding_hor"
+    android:paddingTop="@dimen/menu_padding_ver"
+    android:paddingBottom="@dimen/menu_padding_ver">
+
+    <com.altinn.apps.fisher.ui.component.RTextView
+        android:id="@+id/menuTitle"
+        style="@style/MenuDrawer.Widget.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lIcon"
+        android:text="Title"
+        app:typeface="roboto_medium" />
+
+    <com.altinn.apps.fisher.ui.component.RTextView
+        android:id="@+id/subMenuTitle"
+        style="@style/MenuDrawer.Widget.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTitle"
+        android:layout_toRightOf="@+id/lIcon"
+        android:text="SubTitle"
+         app:typeface="roboto_medium" />
+
+    <ImageView
+        android:id="@+id/lIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bw_save" />
+
+    <!--  
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/subMenuTitle"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_gray" />
+        -->
+
+</RelativeLayout>

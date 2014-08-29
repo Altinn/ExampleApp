@@ -1,0 +1,9 @@
+<com.altinn.apps.fisher.ui.component.RTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:id="@+id/spinner_item"
+    style="@style/SPINNER_ITEM"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    app:typeface="roboto_medium"
+    android:singleLine="true" />

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/seperatorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/color_dark_green" />
+
+    <ListView
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperatorTitle"
+        android:divider="@color/color_gray1"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="@dimen/left_margin_min"
+        android:paddingRight="@dimen/right_margin_min"
+        android:scrollingCache="false" >
+    </ListView>
+
+    <View
+        android:id="@+id/seperatorMenu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/menuContainer"
+        android:layout_marginLeft="@dimen/left_margin_min"
+        android:layout_marginRight="@dimen/right_margin_min"
+        android:background="@color/color_gray1" />
+
+    <com.altinn.apps.fisher.ui.component.RTextView
+        android:id="@+id/subMenuTitle"
+        style="@style/MenuDrawer.Widget.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_margin_normal"
+        android:text="@string/menu_notice"
+        app:typeface="roboto_medium" />
+
+</RelativeLayout>

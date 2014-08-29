@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".FactoryDetailsActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_head"
+            android:layout_marginBottom="@dimen/top_margin_min"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_marginTop="@dimen/bottom_margin_min" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    style="@style/FORM_LABEL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_normal"
+                    android:text="@string/lbl_receipient_name"
+                    app:typeface="roboto_medium" />
+
+                <com.altinn.apps.fisher.ui.component.REditText
+                    android:id="@+id/edtFirmName"
+                    style="@style/FORM_EDIT_INDICATOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text=""
+                    app:typeface="roboto_medium" />
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    style="@style/FORM_LABEL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_normal"
+                    android:text="@string/lbl_receipt_number"
+                    app:typeface="roboto_medium" />
+
+                <com.altinn.apps.fisher.ui.component.REditText
+                    android:id="@+id/edtFirmNumber"
+                    style="@style/FORM_EDIT_INDICATOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text=""
+                    app:typeface="roboto_medium" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/top_margin_normal"
+                    android:layout_marginTop="@dimen/bottom_margin_normal" >
+
+                    <RelativeLayout
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/color_dark_gray"
+                        android:paddingLeft="@dimen/left_margin_normal"
+                        android:paddingRight="@dimen/right_margin_normal" >
+
+                        <ImageView
+                            android:id="@+id/imgSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/left_margin_min"
+                            android:src="@drawable/content_save" />
+
+                        <com.altinn.apps.fisher.ui.component.RTextView
+                            style="@style/PROFILE_LABEL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgSave"
+                            android:text="@string/lbl_save"
+                            app:typeface="roboto_medium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/color_dark_gray"
+                        android:paddingLeft="@dimen/left_margin_normal"
+                        android:paddingRight="@dimen/right_margin_normal" >
+
+                        <ImageView
+                            android:id="@+id/imgDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/left_margin_min"
+                            android:src="@drawable/navigation_cancel" />
+
+                        <com.altinn.apps.fisher.ui.component.RTextView
+                            style="@style/PROFILE_LABEL"
+                            android:id="@+id/textDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgDelete"
+                            android:text="@string/lbl_delete"
+                            app:typeface="roboto_medium" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statusMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

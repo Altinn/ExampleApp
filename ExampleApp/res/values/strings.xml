@@ -1,0 +1,81 @@
+<resources>
+
+    <string name="app_name">Fiskeriapp</string>
+    <string name="title_home">FISKERIDIREKTORATET</string>
+    <string name="menu_receive_reports">RAPPORTERE MOTTAK</string>
+    <string name="menu_msg_from_vesses">MELDINGER FRA FARTØY</string>
+    <string name="menu_msg_from_receipient">MELDINGER FRA MOTTAK</string>
+    <string name="lbl_reported_before">JEG RAPPORTERER FOR:</string>
+    <string name="lbl_regs_aircraft">FARTØYETS REGISTRERINGSMERKE:</string>
+    <string name="lbl_ship_name">FARTØYNAVN:</string>
+    <string name="lbl_fish_type">TYPE FISK:</string>
+    <string name="lbl_choose_fish">Velg fisk</string>
+    <string name="lbl_choose_fish_landing">Velge fiskemottak</string>
+    <string name="lbl_date">DATO: (dd.mm.åå)</string>
+    <string name="lbl_time">KLOKKE: (tt.mm)</string>
+    <string name="lbl_send">Send</string>
+    <string name="lbl_save">Lagre</string>
+    <string name="lbl_clear">Clear</string>
+    <string name="lbl_delete">Slett</string>
+    <string name="dialog_no">Nei</string>
+    <string name="dialog_yes">Ja</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_progress">Vennligst vent…</string>
+    <string name="dialog_progress_user_profile">Vennligst vent…\n Brukerprofil oppdatering pågår.</string>
+    <string name="dialog_progress_report_sending">Vennligst vent…\n Rapporter sende pågår.</string>
+    <string name="dialog_skip_login">Er du sikker på at vil ignorere innlogging valideringsprosessen?</string>
+    <string name="dialog_exit">Er du sikker på at ønsker å avslutte programmet?</string>
+    <string name="dialog_no_network">Nettverk er ikke tilgjengelig. Noen av funksjonen fungerer kanskje ikke. Prøv en annen gang!</string>
+    <string name="dialog_gps_setting_disabled">Tiden GPS innstillingen er deaktivert, for å bruke GPS-data, Vennligst aktiver innstillingene.</string>
+    <string name="dialog_login_failed">Logg mislyktes…</string>
+    <string name="dialog_login_expired">logging er utløpt, for å få tilgang må du gå for innlogging.</string>
+
+    
+    <string name="context_submenu_myreports">Oversikt alle rapporter</string>
+    <string name="context_menu_myreports">MINE RAPPORTER</string>
+    <string name="context_submenu_myprofile">Mine innstillinger</string>
+    <string name="context_menu_myproflie">MIN PROFIL</string>
+    <string name="context_submenu_information">Om denne appen</string>
+    <string name="context_menu_information">INFORMASJON</string>
+    <string name="menu_notice">Denne appen er utviklet i samarbeid mellom Fiskeridirektoratet og Altinn</string>
+    
+    <string name="lbl_info_about_app">Lorem ipsum dolor</string>
+    <string name="lbl_info_about_app_deatils">Sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="lbl_info_about_report">Ipsum dolor</string>
+    <string name="lbl_info_about_report_details">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    
+    <!-- USER PROFILE -->
+    <string name="lbl_select_units">VELG ENHET:</string>
+    <string name="lbl_representing">REPRESENTERER:</string>
+    <string name="btn_add_receiving">Nytt mottak</string> <!-- New receiving -->
+    <string name="lbl_name">NAVN:</string>
+    <string name="lbl_number">NUMMER:</string>
+    <string name="lbl_address">ADR:</string>
+    
+    <!-- SETTINGS -->
+    <string name="lbl_change_receive_info">ENDRE MOTTAKSINFO</string>
+    <string name="lbl_receipient_name">MOTTAKETS NAVN:</string>
+    <string name="lbl_receipt_number">MOTTAKETS NUMMER:</string>
+    <string name="lbl_street_address">GATEADRESSE:</string>
+    <string name="lbl_postal_code">POSTNR:</string>
+    <string name="lbl_place">STED:</string>
+    
+    
+    <!-- Report [SAVE/SEND] List -->
+     <string name="lbl_recipient_off">MOTTAK AV:</string>
+     <string name="lbl_reports_for">DU RAPPORTERER FOR:</string>
+     <string name="lbl_choose_rception">VELG MOTTAK:</string>
+     <string name="lbl_no_recipt_selected">Ingen mottak er valgt…</string>
+     
+     <!-- Report [SEND] Detail -->
+     <string name="lbl_reciption">MOTTAK:</string>
+     <string name="lbl_ship_brand">FARTØYMERKE:</string>
+     <string name="lbl_send_date">SENDT:</string>
+     <string name="lbl_send_time">KLOKKEN:</string>
+     <string name="lbl_msg_id">ARKIV MELDING ID:</string>
+     <string name="msg_report_sent">Rapport %s er sendt</string>    
+     <string name="msg_report_sent_failed">Rapporten sendes feilet : %s</string>
+     
+     <string name="lbl_time_short">kl. </string>
+    
+</resources>

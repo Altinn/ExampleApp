@@ -1,0 +1,165 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+     <style name="APP_TITLE_BAR" parent="@android:style/TextAppearance">      
+        <item name="android:textSize">@dimen/fs_l4</item>
+        <item name="android:textColor">@color/color_white</item>       
+        <item name="android:textStyle">italic</item>
+    </style>
+    
+    <style name="HOME_SCREEN_MENU_SUB" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_l2</item>
+        <item name="android:textColor">@color/color_gray1</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <style name="HOME_SCREEN_MENU" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_l4</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    
+     <style name="SPINNER_ITEM" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m2</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+    
+    <style name="TITLE_FORM_HEAD" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_l4</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@color/color_dark_gray</item>
+        <item name="android:drawableLeft">@drawable/bw_arrow_left</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+    <style name="TITLE_FORM_SUBHEAD" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_l1</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FORM_LABEL_HEAD" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m4</item>
+        <item name="android:textColor">@color/color_dark_green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="FORM_LABEL" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m2</item>
+        <item name="android:textColor">@color/color_dark_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+     <style name="FORM_ITEM_CHECKBOX" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m4</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="FORM_ITEM_SUBLABEL" parent="@style/FORM_ITEM_CHECKBOX">
+         <item name="android:paddingLeft">5dp</item> 
+         <item name="android:paddingTop">5dp</item>     
+    </style>
+    
+    <style name="FORM_EDIT" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m4</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+     <style name="FORM_EDIT_INDICATOR" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m4</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:drawableRight">@drawable/content_edit</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textStyle">normal</item>  
+        <item name="android:singleLine">false</item>
+        <item name="android:imeOptions">actionNext</item>
+              
+    </style>
+    <style name="FORM_EDIT_SINGLE_ENTRY" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m4</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+      
+     <style name="PAGE_INDICATOR_FILLED" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/color_green_gray</item>
+        <item name="android:layout_weight">20</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>  
+    
+     <style name="PROFILE_LABEL" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_l1</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+     <style name="PROFILE_LABEL_ITEM" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_m3</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+     <style name="SEPERATOR" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/color_light_green</item>
+        <item name="android:layout_marginTop">@dimen/top_margin_min</item>
+        <item name="android:layout_marginBottom">@dimen/bottom_margin_min</item>
+    </style>
+    
+    <style name="MenuDrawer" />
+    <style name="MenuDrawer.Widget" />
+    <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">@dimen/fs_m5</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        
+    </style>
+    <style name="MenuDrawer" />
+    <style name="MenuDrawer.Widget" />
+     <style name="MenuDrawer.Widget.SubTitle">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">@dimen/fs_m2</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>       
+    </style>
+     
+
+</resources>

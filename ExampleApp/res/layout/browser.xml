@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <WebView	
+        android:id="@+id/myWebView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"
+		/>
+		
+      <com.altinn.apps.fisher.ui.component.RTextView	
+        android:id="@+id/redirectText"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"
+        android:gravity="center"       
+        android:text="Du vil bli omdirigert snart."       
+        app:typeface="roboto_medium"
+        android:textSize="@dimen/fs_l1"
+        android:textColor="@color/color_black"
+		/>
+</LinearLayout>

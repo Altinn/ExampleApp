@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left_margin">10dp</dimen>
+    <dimen name="right_margin">10dp</dimen>
+    <dimen name="profile_image_dim">20dp</dimen>
+    
+    <dimen name="menu_padding_hor">5dp</dimen>
+    <dimen name="menu_padding_ver">10dp</dimen>
+   
+    <dimen name="fs_sm1">7sp</dimen>
+    <dimen name="fs_sm2">8sp</dimen>
+    <dimen name="fs_sm3">9sp</dimen>
+    <dimen name="fs_sm4">10sp</dimen>
+    <dimen name="fs_sm5">11sp</dimen>
+    
+    <dimen name="fs_m1">12sp</dimen>
+    <dimen name="fs_m2">13sp</dimen>
+    <dimen name="fs_m3">14sp</dimen>
+    <dimen name="fs_m4">15sp</dimen>
+    <dimen name="fs_m5">16sp</dimen>
+    
+    <dimen name="fs_l1">17sp</dimen>
+    <dimen name="fs_l2">18sp</dimen>
+    <dimen name="fs_l3">19sp</dimen>
+    <dimen name="fs_l4">20sp</dimen>
+    <dimen name="fs_l5">21sp</dimen>
+    
+    
+    <dimen name="left_margin_min">5dp</dimen>
+    <dimen name="right_margin_min">5dp</dimen>
+    <dimen name="top_margin_min">5dp</dimen>
+    <dimen name="bottom_margin_min">5dp</dimen>
+    
+    <dimen name="left_margin_normal">10dp</dimen>
+    <dimen name="right_margin_normal">10dp</dimen>
+    <dimen name="top_margin_normal">10dp</dimen>
+    <dimen name="bottom_margin_normal">10dp</dimen>
+    
+    <dimen name="home_sep_line_pad_hor">20dp</dimen>
+    <dimen name="home_item_pad_hor">40dp</dimen>
+    <dimen name="home_item_height">80dp</dimen>
+    <dimen name="title_height">48dp</dimen>
+    
+
+</resources>

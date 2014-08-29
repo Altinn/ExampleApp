@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/arrowIcon"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bottom_margin_min" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r1lbl"
+                style="@style/FORM_LABEL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_min"
+                android:layout_weight="35"
+                android:maxLines="1"
+                android:text="@string/lbl_name"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r1lblValue"
+                style="@style/PROFILE_LABEL_ITEM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_min"
+                android:layout_weight="65"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="@dimen/fs_m5"
+                app:typeface="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r2lbl"
+                style="@style/FORM_LABEL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="35"
+                android:maxLines="1"
+                android:text="@string/lbl_number"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r2lblValue"
+                style="@style/PROFILE_LABEL_ITEM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="65"
+                android:maxLines="1"
+                android:text=""
+                app:typeface="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:visibility="gone" >
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r3lbl"
+                style="@style/FORM_LABEL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="35"
+                android:maxLines="1"
+                android:text="@string/lbl_address"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/r3lblValue"
+                style="@style/PROFILE_LABEL_ITEM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="65"
+                android:maxLines="2"
+                android:text=""
+                app:typeface="roboto_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/navigation_next_item" />
+
+    <View
+        style="@style/SEPERATOR"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp" 
+        />
+
+</RelativeLayout>

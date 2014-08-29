@@ -1,0 +1,15 @@
+<melding xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:seres=\"http://seres.no/xsd/forvaltningsdata\" xmlns:xd=\"http://schemas.microsoft.com/office/infopath/2003\" dataFormatProvider=\"SERES\" dataFormatId=\"%1$s\" dataFormatVersion=\"%2$s\">
+	 <Meldingshode>
+		<InnsenderMelding>
+			<mottak>%3$s</mottak>
+		</InnsenderMelding>
+	</Meldingshode>
+	<Meldingsinnhold>
+		<Landingsmelding>
+				<regm>%4$s</regm>
+				<navn>%5$s</navn>
+				<art>%6$s</art>
+				<tidspunkt>%7$s</tidspunkt>
+		</Landingsmelding>
+	</Meldingsinnhold>
+</melding>		 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="fish_types">
+        <item >Velg Fisk…</item>        
+        <item >Blåkveite</item>
+        <item >Brisling</item>        
+        <item >Kongekrabbe</item>
+        <item >Kveite</item>
+        <item >Torsk</item>
+    </string-array>
+    
+</resources>

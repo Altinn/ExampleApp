@@ -1,0 +1,191 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.altinn.apps.fisher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ReportSendDetailActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin_min"
+            android:background="@color/color_dark_gray"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/bottom_margin_min"
+            android:paddingLeft="@dimen/left_margin"
+            android:paddingRight="@dimen/right_margin"
+            android:paddingTop="@dimen/top_margin_min" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    style="@style/PROFILE_LABEL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:singleLine="true"
+                    android:text="@string/lbl_send_date"
+                    android:textSize="@dimen/fs_m2"
+                    app:typeface="roboto_medium" />
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    android:id="@+id/sendDateLblValue"
+                    style="@style/PROFILE_LABEL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:singleLine="true"
+                    android:text="21 October 2009"
+                    android:textSize="@dimen/fs_m4"
+                    app:typeface="roboto_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    style="@style/PROFILE_LABEL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sendDateLbl"
+                    android:layout_weight="25"
+                    android:singleLine="true"
+                    android:text="@string/lbl_send_time"
+                    android:textSize="@dimen/fs_m2"
+                    app:typeface="roboto_medium" />
+
+                <com.altinn.apps.fisher.ui.component.RTextView
+                    android:id="@+id/sendTimeLblValue"
+                    style="@style/PROFILE_LABEL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:singleLine="true"
+                    android:text="09:30"
+                    android:textSize="@dimen/fs_m4"
+                    app:typeface="roboto_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topContainer"
+            android:layout_marginBottom="@dimen/bottom_margin_min"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                style="@style/FORM_LABEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_normal"
+                android:text="@string/lbl_reciption"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/edtReception"
+                style="@style/FORM_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="4dp"
+                android:text=""
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                style="@style/FORM_LABEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_normal"
+                android:text="@string/lbl_ship_brand"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/edtShipBrand"
+                style="@style/FORM_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="4dp"
+                android:text=""
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                style="@style/FORM_LABEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_normal"
+                android:text="@string/lbl_ship_name"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/edtShipName"
+                style="@style/FORM_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="4dp"
+                android:text=""
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                style="@style/FORM_LABEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_normal"
+                android:text="@string/lbl_fish_type"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/edtFishType"
+                style="@style/FORM_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="4dp"
+                android:text=""
+                app:typeface="roboto_medium" />
+             <com.altinn.apps.fisher.ui.component.RTextView
+                style="@style/FORM_LABEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_normal"
+                android:text="@string/lbl_msg_id"
+                app:typeface="roboto_medium" />
+
+            <com.altinn.apps.fisher.ui.component.RTextView
+                android:id="@+id/edtMsgId"
+                style="@style/FORM_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="4dp"
+                android:text=""
+                app:typeface="roboto_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statusMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>
